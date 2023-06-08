@@ -1,12 +1,10 @@
 #include <ESP8266WiFi.h> 
 #include <ESPAsyncWebServer.h>    // 包含异步Web服务器库文件
 
-//char ssid[] = "SmartwsnWiFi";         // WiFi名
-//char pass[] = "szptwsn2611";         // WiFi密码
-char ssid[] = "OPPO";         // WiFi名
-char pass[] = "2298812869";         // WiFi密码
-int Humidity = 0;// 此处应为获取温度代码
-int Temperature = 0;// 此处应为获取湿度代码
+char ssid[] = "*";         // WiFi名
+char pass[] = "*";         // WiFi密码
+int Humidity = 0;
+int Temperature = 0;
 int RH=0,RL=0,TH=0,TL=0;
 
 AsyncWebServer server(80);        // 创建WebServer对象, 端口号80
